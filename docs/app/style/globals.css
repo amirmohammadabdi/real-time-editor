@@ -332,6 +332,7 @@ main.home{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 20px;
 }
 main.home h1{
   color: var(--main-color);
