@@ -1,0 +1,345 @@
+:root {
+  --main-color: rgb(47, 97, 47);
+}
+
+html {
+  height: 100%;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: #eee;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+header{
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  box-shadow: 0px 0px 7px 0px gray;
+}
+header h1{
+  color: var(--main-color);
+}
+header ul{
+  display: flex;
+}
+header ul li{
+  margin: 5px;
+  transition: .3s;
+}
+header ul li:hover{
+  color: var(--main-color);
+}
+
+.login-container{
+  width: 100%;
+  padding: 20px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.login-container form{
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0px 0px 5px 0px gray;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-container form .top{
+  width: 100%;
+  text-align: center;
+}
+.login-container form .top h3{
+  transition: .3s;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.login-container form .top h3:hover{
+  transform: scale(1.05, 1.05);
+  color: var(--main-color);
+}
+.login-container form input{
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  margin-top: 20px;
+  padding: 5px;
+}
+.login-container form button{
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  outline: none;
+  margin-top: 20px;
+  background: var(--main-color);
+  color: white;
+}
+.login-container form .login-state{
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+  color: var(--main-color);
+  border: 1px dashed var(--main-color);
+  border-radius: 10px;
+}
+
+.pannel-ul-cover{
+  width: 100%;
+  padding: 20px;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+}
+.pannel-ul-cover .pannel-ul{
+  width: 100%;
+  padding: 20px;
+  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0px 0px 5px 0px gray;
+}
+main.pannel{
+  padding: 20px;
+  margin-bottom: 100px;
+}
+main.pannel table{
+  width: 100%;
+}
+main.pannel table button{
+  width: 70px;
+  height: 35px;
+  border-radius: 10px;
+  background: var(--main-color);
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+main.pannel table thead{
+  background: var(--main-color);
+  color: white;
+}
+main.pannel table th{
+  padding: 10px;
+}
+main.pannel table tbody th{
+  background-color: white;
+}
+
+.dark-back{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(128, 128, 128, 0.363);
+}
+.dark-back .delete-box{
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+}
+.dark-back .delete-box h3{
+  width: 100%;
+  text-align: center;
+  color: var(--main-color);
+}
+.dark-back .delete-box div{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.dark-back .delete-box button{
+  width: 70px;
+  height: 35px;
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.pannel form{
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+.pannel form h2{
+  color: var(--main-color);
+}
+.pannel form input{
+  width: 100%;
+  height: 40px;
+  max-width: 700px;
+  border-radius: 10px;
+  outline: none;
+  padding: 5px;
+  margin-top: 20px;
+}
+.pannel form select{
+  width: 100%;
+  height: 40px;
+  max-width: 700px;
+  border-radius: 10px;
+  outline: none;
+  padding: 5px;
+  margin-top: 20px;
+}
+.pannel form button{
+  width: 100%;
+  height: 40px;
+  max-width: 700px;
+  border-radius: 10px;
+  outline: none;
+  background: var(--main-color);
+  color: white;
+  margin-top: 20px;
+}
+.pannel form .mem-container{
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--main-color);
+  margin-top: 20px;
+}
+.pannel form .mem-container .top{
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--main-color);
+  color: white;
+}
+.pannel form .mem-container .top button{
+  width: 100px;
+  height: 35px;
+  margin-top: 0px;
+  background-color: white;
+  color: var(--main-color);
+}
+.pannel form .mem-container .mems-box{
+  padding: 10px;
+}
+.pannel form .mem-container .bef-password{
+  width: 100%;
+  margin-top: 20px;
+  color: var(--main-color);
+}
+
+.room-container{
+  width: 100%;
+  height: 500px;
+  background: rgb(196, 255, 196);
+}
+.room-container .user-column{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.room-container .user-column .in-box{
+  width: 100%;
+  height: 48%;
+  border-radius: 10px;
+  border: 1px solid var(--main-color);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.room-container .user-column .in-box .top{
+  width: 100%;
+  padding: 10px;
+  background: var(--main-color);
+  color: white;
+}
+.room-container .user-column .in-box .space{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  overflow-y: auto;
+}
+.room-container .user-column .in-box .space .item{
+  width: 100%;
+  padding: 5px;
+  background: white;
+  color: var(--main-color);
+  border-radius: 10px;
+  margin-top: 10px;
+}
+.room-container .user-column .in-box .space .item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.room-container .user-column .in-box .space .item span{
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px gray;
+}
+.room-container .user-column .in-box .space .item div{
+ word-break: dot;
+}
+
+.doc-box{
+  height: 100% !important;
+}
+.dir-container ul li{
+  list-style: circle;
+}
+
+main.home{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+main.home h1{
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 500px){
+  header{
+    flex-direction: column;
+  }
+}
