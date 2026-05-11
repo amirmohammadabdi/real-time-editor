@@ -34,7 +34,7 @@ mainFolder/
 
 # Setup Instructions
 - clone:
-    `git clone origin https://github.com/amirmohammadabdi/real-time-canvas.git`
+    `git clone origin https://github.com/amirmohammadabdi/real-time-editor.git`
     `cd mainFolder`
 - Frontend: 
     `cd collab`
